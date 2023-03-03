@@ -15,7 +15,7 @@ export function DeleteFormProvider({ children }: { children: ReactNode }) {
         >
             {children}
             <div
-                className={`w-full h-screen left-0 top-0 bg-black/50 fixed flex justify-center items-center ${
+                className={`w-full px-2 h-screen left-0 top-0 bg-black/50 fixed flex justify-center items-center ${
                     !stateDelete && "invisible"
                 }`}
             >
