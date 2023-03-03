@@ -1,0 +1,31 @@
+.score {
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    &.anim-center {
+        animation-name: anim-center;
+    }
+    &.anim-top {
+        animation-name: anim-top;
+    }
+    &.anim-bottom {
+        animation-name: anim-bottom;
+    }
+    &.like {
+        @apply text-red-pale;
+    }
+}
+@keyframes anim-center {
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes anim-bottom {
+    100% {
+        transform: translateY(-100%);
+    }
+}
+@keyframes anim-top {
+    100% {
+        transform: translateY(100%);
+    }
+}
