@@ -124,19 +124,36 @@ export function HeaderReply({
                                                 />
                                                 <span>Delete</span>
                                             </button>
-                                            <button
-                                                onClick={() => {
-                                                    setEditState(true);
-                                                }}
-                                                className="flex hover:opacity-50 text-blue-dark items-center gap-1 cursor-pointer"
-                                            >
-                                                <img
-                                                    className="w-3"
-                                                    src="./images/icon-edit.svg"
-                                                    alt="edit-icon"
-                                                />
-                                                <span>Edit</span>
-                                            </button>
+                                            {!editState && (
+                                                <button
+                                                    onClick={() => {
+                                                        setEditState(true);
+                                                    }}
+                                                    className="flex hover:opacity-50 text-blue-dark items-center gap-1 cursor-pointer"
+                                                >
+                                                    <img
+                                                        className="w-3"
+                                                        src="./images/icon-edit.svg"
+                                                        alt="edit-icon"
+                                                    />
+                                                    <span>Edit</span>
+                                                </button>
+                                            )}
+                                            {editState && (
+                                                <button
+                                                    onClick={() => {
+                                                        setEditState(false);
+                                                    }}
+                                                    className="flex hover:opacity-50 text-blue-dark items-center gap-1 cursor-pointer"
+                                                >
+                                                    <img
+                                                        className="w-4"
+                                                        src="./images/icon-cancel.svg"
+                                                        alt="cancel-icon"
+                                                    />
+                                                    <span>Cancel</span>
+                                                </button>
+                                            )}
                                         </>
                                     ) : (
                                         <button
