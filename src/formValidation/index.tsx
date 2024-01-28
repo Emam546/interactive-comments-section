@@ -18,7 +18,7 @@ export default function FormComment({
         <form
             id={Math.ceil(Math.random() * 1000).toString()}
             action="#"
-            className="addComment  bg-white p-6 rounded-lg"
+            className="addComment bg-white p-6 rounded-lg"
             {...props}
         >
             <div className="flex gap-5 relative pb-20 md:pb-0">

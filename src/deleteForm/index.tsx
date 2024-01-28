@@ -5,7 +5,7 @@ export const DeleteFomContext = createContext<React.Dispatch<() => void>>(
 export function DeleteFormProvider({ children }: { children: ReactNode }) {
     const [stateDelete, setDeleteState] = useState(false);
     const [func, funcDelete] = useState<() => void>(() => () => {});
-    console.log(func);
+
     return (
         <DeleteFomContext.Provider
             value={(resfunc) => {

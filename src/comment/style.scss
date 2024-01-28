@@ -10,9 +10,7 @@
     &.anim-bottom {
         animation-name: anim-bottom;
     }
-    &.like {
-        @apply text-red-pale;
-    }
+
 }
 @keyframes anim-center {
     100% {

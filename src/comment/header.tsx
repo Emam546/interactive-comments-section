@@ -74,7 +74,6 @@ export function HeaderReply({
             <div className="mb-4">
                 <div className="mb-2 rounded-lg p-6 bg-white">
                     <div className="flex gap-4 relative pb-12 md:pb-0">
-                        
                         <Spanner
                             user={user}
                             score={score}
@@ -109,16 +108,11 @@ export function HeaderReply({
                                             <button
                                                 onClick={() => {
                                                     setDeleteForm(() => {
-                                                        return ()=>{
+                                                        return () => {
                                                             setComment(
                                                                 undefined
                                                             );
-                                                            console.log(
-                                                                "DELETE"
-                                                            );
-
-                                                        }
-                                        
+                                                        };
                                                     });
                                                 }}
                                                 className="flex hover:opacity-50 text-warn items-center gap-1 cursor-pointer "
@@ -182,7 +176,7 @@ export function HeaderReply({
                                             return (
                                                 <span key={i}>
                                                     {text}
-                                                    <br  />
+                                                    <br />
                                                 </span>
                                             );
                                         })}
